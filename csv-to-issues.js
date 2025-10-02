@@ -318,7 +318,11 @@ async function main() {
   console.log('🎉 Done!')
 }
 
-main().catch((error) => {
-  console.error('💥 Script failed:', error.message)
-  process.exit(1)
-})
+main()
+  .then(() => {
+    process.exit(0)
+  })
+  .catch((error) => {
+    console.error('💥 Script failed:', error.message)
+    process.exit(1)
+  })
