@@ -14,8 +14,6 @@ GITHUB_TOKEN=your_pat_here npx csv-to-github-issues owner/repo
 
 By default, it looks for `issues.csv` in the current directory.
 
-```bash
-
 ### Global Installation
 
 ```bash
