@@ -2,6 +2,9 @@
 
 const { main } = require('../lib/csv-to-issues')
 
+const BATCH_SIZE = parseInt(process.env.BATCH_SIZE || '10', 10);
+const BATCH_DELAY_MS = parseInt(process.env.BATCH_DELAY_MS || '2000', 10);
+
 const CSV_FILE = process.env.CSV_FILE || './issues.csv'
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 
@@ -34,11 +37,14 @@ process.on('unhandledRejection', (reason, promise) => {
   process.exit(1)
 })
 
-main(repoOwner, repoName, CSV_FILE, GITHUB_TOKEN)
+main(repoOwner, repoName, CSV_FILE, GITHUB_TOKEN, {
+  batchSize: BATCH_SIZE,
+  batchDelayMs: BATCH_DELAY_MS,
+})
   .then(() => {
-    process.exit(0)
+    process.exit(0);
   })
   .catch((error) => {
-    console.error('💥 Script failed:', error.message)
-    process.exit(1)
-  })
+    console.error('💥 Script failed:', error.message);
+    process.exit(1);
+  });
