@@ -1,0 +1,103 @@
+{
+  "name": "csv-to-issues",
+  "version": "1.0.0",
+  "description": "A CLI tool to bulk create GitHub issues and labels from CSV files",
+  "main": "index.js",
+  "bin": {
+    "csv-to-issues": "./bin/csv-to-issues.js"
+  },
+  "scripts": {
+    "start": "node bin/csv-to-issues.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "keywords": [
+    "github",
+    "issues",
+    "csv",
+    "bulk",
+    "automation",
+    "cli",
+    "npx"
+  ],
+  "author": {
+    "name": "Krushn Dayshmookh",
+    "email": "krushndayshmookh@gmail.com",
+    "url": "https://github.com/krushndayshmookh"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krushndayshmookh/csv-to-issues.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krushndayshmookh/csv-to-issues/issues"
+  },
+  "homepage": "https://github.com/krushndayshmookh/csv-to-issues#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "bin/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "node"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "off",
+      "node/no-unpublished-require": "off"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 100
+  }
+}
