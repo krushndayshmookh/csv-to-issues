@@ -1,4 +1,4 @@
-# csv-to-github-issues
+# csv-to-issues
 
 A CLI tool to bulk create GitHub issues and labels from CSV files. Perfect for project setup, issue migration, and Hacktoberfest preparation!
 
