@@ -1,0 +1,6 @@
+Title,Description,Priority,Type,Labels,Difficulty,Component
+"Add dark mode","Implement dark theme with system preference detection and toggle","Medium","Enhancement","ui,theme,accessibility","Easy","UI"
+"Export data to CSV","Allow users to export filtered results to CSV from reports page","High","Enhancement","reports,export","Medium","Core"
+"Keyboard shortcuts","Add shortcuts for common actions to improve power-user workflow","Low","Enhancement","ux,productivity,accessibility","Medium","UI"
+"Offline support","Cache critical routes and assets for limited offline usage","Medium","Enhancement","pwa,service-worker","Hard","Service"
+

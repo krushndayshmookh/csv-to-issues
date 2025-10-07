@@ -1,0 +1,6 @@
+Title,Description,Priority,Type,Labels,Difficulty,Component
+"Crash on launch","App crashes on startup on macOS 14.5 when loading user profile","High","Bug","crash,stability","Medium","Core"
+"Login fails with special characters","Users cannot log in when passwords contain emojis","High","Bug","authentication,security","Easy","Core"
+"Memory leak in image viewer","Opening large images increases memory usage over time","Medium","Bug","performance,memory","Hard","UI"
+"Broken dark mode toggle","Dark mode toggle does not persist after refresh","Low","Bug","ui,theme","Easy","UI"
+
