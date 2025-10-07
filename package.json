@@ -4,7 +4,7 @@
   "description": "A CLI tool to bulk create GitHub issues and labels from CSV files",
   "main": "index.js",
   "bin": {
-    "csv-to-issues": "./bin/csv-to-issues.js"
+    "csv-to-issues": "bin/csv-to-issues.js"
   },
   "scripts": {
     "start": "node bin/csv-to-issues.js",
