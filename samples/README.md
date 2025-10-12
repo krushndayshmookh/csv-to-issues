@@ -15,6 +15,7 @@ Title, Description, Priority, Type, Labels, Difficulty, Component
 ```bash
 GITHUB_TOKEN=your_pat_here CSV_FILE=./samples/bugs.csv npx csv-to-issues owner/repo
 ```
+You can download any sample file, edit it and run the tool to match your project.
 
-You can duplicate and edit any sample to match your project.
+To download use `wget https://github.com/krushndayshmookh/csv-to-issues/tree/main/samples/bugs.csv`
 
