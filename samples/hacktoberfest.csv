@@ -1,0 +1,6 @@
+Title,Description,Priority,Type,Labels,Difficulty,Component
+"Add CONTRIBUTING.md","Create a contributing guide with setup, code style, and PR process","Low","Enhancement","documentation,hacktoberfest","Easy","Documentation"
+"Refactor utils into modules","Split `utils.js` into focused modules with tests","Medium","Enhancement","refactor,hacktoberfest","Medium","Core"
+"Improve a11y for buttons","Ensure all buttons have accessible names and contrast","Low","Enhancement","accessibility,hacktoberfest","Easy","UI"
+"Add issue templates","Provide GitHub issue templates for bugs and features","Low","Enhancement","community,hacktoberfest","Easy","Documentation"
+
