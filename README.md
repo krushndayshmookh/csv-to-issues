@@ -58,6 +58,26 @@ Title,Description,Priority,Type,Labels,Difficulty,Component
 "Update docs","Improve API documentation","Low","Enhancement","documentation","Easy","Documentation"
 ```
 
+### Samples
+
+Pre-built CSVs and templates are available in `samples/` and `.github/ISSUE_TEMPLATE/`:
+
+- `samples/bugs.csv` — bug reports
+- `samples/features.csv` — feature/enhancement requests
+- `samples/hacktoberfest.csv` — beginner-friendly issues for Hacktoberfest
+
+Run the tool with a sample file:
+
+```bash
+GITHUB_TOKEN=your_pat_here CSV_FILE=./samples/bugs.csv npx csv-to-issues owner/repo
+```
+
+Issue templates included:
+
+- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.github/ISSUE_TEMPLATE/hacktoberfest.md`
+
 ## Features
 
 - [x] Bulk create GitHub issues from CSV
